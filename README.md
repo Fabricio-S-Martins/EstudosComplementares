@@ -15,7 +15,9 @@ O foco é **responder sob pressão, explicar o porquê e mostrar com clareza o q
 5. O assistente cria `meus-estudos/sessoes/NN-sessao.md`. **Responda dentro do arquivo**, respeitando o limite de linhas, e peça "corrija a sessão NN". A correção, a nota geral e os insights entram no mesmo arquivo.
 6. Registre os 🔴 no diário ([modelo](modelos/diario.modelo.md)).
 
-> **Seus dados ficam só na sua máquina.** Tudo o que é pessoal (perfil, progresso, sessões, gabaritos e diário) vive em `meus-estudos/`, que está no `.gitignore`. O repositório traz apenas os modelos.
+> **Seus dados ficam fora deste repositório.** Tudo o que é pessoal (perfil, progresso, sessões, gabaritos e diário) vive em `meus-estudos/`, que está no `.gitignore`. O repositório traz apenas os modelos.
+>
+> **Quer os dados em várias máquinas?** Faça de `meus-estudos/` um repositório **privado** seu: dentro da pasta, rode `git init`, crie um repositório privado no GitHub e envie com `git push`. Em outra máquina, clone este projeto e depois `git clone <seu-repo-privado> meus-estudos`.
 
 > **Aviso:** [trilhas/dotnet/pegadinhas-gabarito.md](trilhas/dotnet/pegadinhas-gabarito.md) é material **do assistente** e contém as respostas das pegadinhas. Para treinar de verdade, não abra esse arquivo.
 
@@ -60,7 +62,7 @@ Cada resposta recebe também uma **nota de comunicação** (mesmos emojis). No f
 
 | Pasta | Conteúdo |
 |---|---|
-| [trilhas/](trilhas/LEIAME.md) | Conteúdo por stack. Trilha incluída: [trilhas/dotnet/](trilhas/dotnet/LEIAME.md) (Backend .NET) |
+| [trilhas/](trilhas/trilhas.md) | Conteúdo por stack. Trilha incluída: [trilhas/dotnet/](trilhas/dotnet/dotnet.md) (Backend .NET) |
 | [assistente/](assistente/regras-do-assistente.md) | Regras de como a IA se comporta nas sessões |
 | [modelos/](modelos/) | Modelos de perfil, progresso, histórico, sessão e diário |
 | `meus-estudos/` | **Local, fora do git:** perfil, progresso, histórico, sessões, gabaritos e diário |
