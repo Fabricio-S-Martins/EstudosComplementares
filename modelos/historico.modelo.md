@@ -1,6 +1,6 @@
 # Histórico · AAAA-MM
 
-> Arquivo **local**, um por mês (`meus-estudos/historico/AAAA-MM.md`). O assistente lê só o mês atual; para checar repetição nos meses anteriores, **busca por tópico e palavra-chave** (não lê tudo).
+> Arquivo **local**, um por mês (`meus-estudos/historico/AAAA-MM.md`). Na preparação da sessão não é lido; só é atualizado ao fechar (a anti-repetição usa `meus-estudos/cenarios-usados.md`).
 
 ## Sessões
 

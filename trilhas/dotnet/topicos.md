@@ -1,6 +1,6 @@
 # Tópicos (etiquetas padronizadas)
 
-> Lista fechada de tópicos, derivada das ementas em `ementas/` desta trilha. O assistente usa **exatamente estas etiquetas** no placar (`meus-estudos/progresso.md`) e no histórico (`meus-estudos/historico/`). Assim o placar tem um tamanho máximo (uma linha por tópico) e a busca por repetição é confiável.
+> Lista fechada, derivada das ementas. Usar **exatamente estas etiquetas** no placar (`meus-estudos/progresso.md`) e no histórico (`meus-estudos/historico/`).
 >
 > Se nenhum tópico couber, use `NN · Outros` (NN = módulo mais próximo). Em "ache o erro", a etiqueta é a do **assunto** do erro (ex.: `throw ex` → `07 · Tratamento de exceções`); "ache o erro" é o *tipo* da pergunta, não o tópico.
 

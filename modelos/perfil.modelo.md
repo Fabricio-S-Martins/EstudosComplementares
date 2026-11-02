@@ -1,6 +1,6 @@
 # Perfil do usuário
 
-> Arquivo **local**: o `meus-estudos/perfil.md` não vai para o GitHub. O assistente cria o seu na primeira sessão, por uma entrevista curta (veja a seção 0 das regras), a partir deste modelo. Edite quando quiser ou peça "atualize meu perfil".
+> Arquivo **local**, criado na primeira sessão (seção 0 das regras). Edite quando quiser ou peça "atualize meu perfil".
 
 ## Objetivo
 - **Como o assistente deve me chamar:**

@@ -42,6 +42,44 @@ O sorteio é **ponderado pelos seus erros** (veja as [regras](assistente/regras-
 
 ---
 
+## Como uma sessão nasce e é corrigida
+
+```mermaid
+flowchart TD
+    A["Você pede uma /sessao"] --> B{"Existe meus-estudos/perfil.md?"}
+    B -- Não --> B1["Entrevista de configuração<br/>e criação do perfil"] --> C
+    B -- Sim --> C["Lê perfil, progresso e diário de erros"]
+
+    subgraph CRIACAO["1. Criação da sessão e do gabarito"]
+        C --> D["Sorteia os tópicos<br/>40% erros · 20% revisão · 25% inéditos · 15% aleatório"]
+        D --> E["Consulta cenarios-usados.md<br/>só nas etiquetas sorteadas"]
+        E --> F["Monta a ficha de cada pergunta<br/>cenário, resposta única, pedido, premissas"]
+        F --> G["Escreve o enunciado<br/>e o gabarito a partir da mesma ficha"]
+        G --> H["Auditoria leve<br/>e correção só do que falhar"]
+        H --> I["Grava sessoes/NN-sessao.md<br/>gabaritos/NN-gabarito.md<br/>e atualiza cenarios-usados.md"]
+    end
+
+    I --> J["Você responde dentro do arquivo<br/>respeitando o limite de linhas"]
+    J --> K["Você pede: corrija a sessão NN"]
+
+    subgraph CORRECAO["2. Correção"]
+        K --> L["Nota técnica e de comunicação por pergunta<br/>mais o texto Como eu diria na entrevista"]
+        L --> M["Bloco Resultado: nota geral,<br/>veredito e insights novos"]
+        M --> N["Atualiza historico/AAAA-MM.md<br/>e progresso.md"]
+        N --> O["Oferece registrar os 🔴<br/>no diário de erros"]
+    end
+
+    O --> P["Você abre o gabarito<br/>só depois de responder, para tirar dúvidas"]
+    P --> Q{"Contestou algum enunciado?"}
+    Q -- Sim --> R["Reescreve enunciado e gabarito<br/>e desconsidera a pergunta da nota"]
+    Q -- Não --> S["Fim da sessão"]
+    R --> S
+```
+
+**Resumo:** o assistente cria **sessão e gabarito juntos**, a partir da mesma ficha, para que os dois sempre combinem. A **correção só existe depois que você pede** e é escrita no mesmo arquivo, abaixo de cada resposta. O **gabarito** serve para conferir dúvidas e só deve ser aberto depois de responder.
+
+---
+
 ## Como a nota funciona
 
 | Marca | Significado |

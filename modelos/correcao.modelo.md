@@ -1,6 +1,6 @@
 # Formato da correção
 
-> Modelo do bloco de correção que o assistente grava abaixo da resposta de cada pergunta. É **Markdown puro** (divisor, título, negrito e blocos de citação), para ficar igual no VS Code, no Obsidian, no GitHub e em qualquer leitor. Não use *callouts* (`[!NOTE]`, `[!TIP]`), HTML nem estilos, porque dependem da plataforma.
+> Bloco de correção gravado abaixo da resposta de cada pergunta. **Markdown puro** (sem *callouts* `[!NOTE]`, HTML nem estilos, que dependem da plataforma).
 
 ```markdown
 ***
@@ -19,4 +19,4 @@
 ```
 
 - O divisor `***` separa a resposta do usuário da correção.
-- Os dois blocos de citação (`>`) ganham uma barra lateral em qualquer leitor e destacam a correção do resto. O segundo, "Como eu diria na entrevista", é o destaque principal e **não leva emoji** no título.
+- O segundo bloco, "Como eu diria na entrevista", é o destaque principal e **não leva emoji** no título.
